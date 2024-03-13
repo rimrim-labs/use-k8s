@@ -1,0 +1,7 @@
+apiVersion: v1
+data:
+  logLevel: "DEBUG"
+  test: "HI"
+kind: ConfigMap
+metadata:
+  name: log-level-configmap
