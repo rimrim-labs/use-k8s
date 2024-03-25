@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: resource-limited-pod
+  labels:
+    name: resource-limited-pod
+spec:
+  containers:
+    - name: nginx
+      image: nginx:latest
+      resources:
+        limits:
+          memory: "256Mi"
+          cpu: "1000m"
+
